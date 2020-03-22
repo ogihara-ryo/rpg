@@ -1,9 +1,21 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
+import { NewGame } from './newGame'
 
 const Home = () => (
-  <div>NEW GAME</div>
+  <NewGameLink />
 )
+
+const NewGameLink = () => (
+  <button onClick={toNewGamePage}>NEW GAME</button>
+)
+
+const toNewGamePage = () => {
+  ReactDOM.render(
+    <NewGame />,
+    document.getElementById('root'),
+  )
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
