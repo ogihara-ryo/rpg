@@ -1,8 +1,8 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import { NewGame } from './newGame'
+import { NewGame } from './NewGame'
 
-const Home = () => (
+export const Home = () => (
   <NewGameLink />
 );
 
@@ -13,13 +13,13 @@ const NewGameLink = () => (
 const toNewGamePage = () => {
   ReactDOM.render(
     <NewGame />,
-    document.getElementById('root'),
+    document.getElementById('main'),
   )
 };
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <Home />,
-    document.getElementById('root'),
+    document.getElementById('main'),
   )
 });
