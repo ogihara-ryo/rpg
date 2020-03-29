@@ -16,10 +16,3 @@ const toNewGamePage = () => {
     document.getElementById('main'),
   )
 };
-
-document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(
-    <Home />,
-    document.getElementById('main'),
-  )
-});
