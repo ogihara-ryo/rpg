@@ -16,7 +16,7 @@ const App = () => {
   )
 }
 
-document.addEventListener('turbolinks:load', () => {
+document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <App />,
     document.getElementById('container')
