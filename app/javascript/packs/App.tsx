@@ -14,7 +14,7 @@ const App = () => {
       <Footer />
     </div>
   )
-}
+};
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
