@@ -6,19 +6,19 @@ import { Home } from './pages/Home'
 
 const App = () => {
   return(
-    <div id="root">
+    <React.Fragment>
       <Header />
       <div id="main">
         <Home />
       </div>
       <Footer />
-    </div>
+    </React.Fragment>
   )
 };
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <App />,
-    document.getElementById('container')
+    document.getElementById('root')
   )
 });
